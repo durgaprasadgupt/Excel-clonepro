@@ -201,7 +201,7 @@ boldBtn.addEventListener("click", function () {
     }
 })
 underlineBtn.addEventListener("click", function () {
-    // Jispe cell click -> bold
+    // Jispe cell click -> underlined
     let uiCellElement = findUICellElement();
     let cid = uiCellElement.getAttribute("cid");
     let rid = uiCellElement.getAttribute("rid");

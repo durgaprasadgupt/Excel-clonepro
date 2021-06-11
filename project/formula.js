@@ -1,6 +1,6 @@
 for (let i = 0; i < allCells.length; i++) {
     // to save the user enetered value into db for later use
-    allCells[i].addEventListener("blur", function () {
+    allCells[i].addEventListener("blur", function () {    // blur ko hm esliye use krte hain taaki jb hm cell me kuchh type krke khi v dusri jgh click kare wo data apne database me update ho jaaye
         let data = allCells[i].innerText;
         let address = addressInput.value;
         // console.log(address);
@@ -90,7 +90,7 @@ function evaluateFormula(formula) {
     let evaluatedFormula = formulaTokens.join(" ");
     // ( 10 + 20 )
     // stack 
-    return eval(evaluatedFormula);
+    return eval(evaluatedFormula);  // in js eval is like a calculator ,he will calculate your formula.
 }
 function setCell(value, formula) {
     let uicellElem = findUICellElement();
